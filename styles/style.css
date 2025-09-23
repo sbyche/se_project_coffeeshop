@@ -4,10 +4,104 @@
   max-width: 1600px;
   margin: 0 auto;
   font-family: "Inter", "Arial", sans-serif;
-  /*font-family: "Noto serif", "Time New Roman", serif;*/
   font-size: 16px;
+  font-weight: 500;
   line-height: 20px;
-  /*--- From Project #1 ---
-  margin: auto;
-  --- From Project #1 ---*/
+}
+
+.header {
+  background-color: #ffffff;
+  background-image: url("../images/background_header.svg");
+  background-repeat: no-repeat; /* prevents tiling */
+  background-size: cover; /* scales image to cover the block */
+  background-position: center; /* centers the image */
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  padding: 30px 80px 40px 80px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.nav {
+  /* Add flex properties here */
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  width: 105px;
+  height: 39px;
+  margin-left: -50px;
+}
+
+.nav__links {
+  /* Reset default list styles here */
+  margin: 0 0 0;
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 20px;
+  list-style-type: none;
+  padding-left: 0;
+  align-items: top;
+}
+
+.nav__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: #1f69c9;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+.header__title {
+  padding-top: 183px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-width: 729px;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 72px;
+}
+
+.header__span-accent {
+  font-family: "Noto serif", "Time New Roman", serif;
+  font-style: italic;
+  font-weight: normal;
+  color: #3f96f3;
+}
+
+.header__description {
+  max-width: 683px;
+  margin: 28px 0 0;
+  font-family: "Noto serif", "Time New Roman", serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.header__image {
+  z-index: -1;
+  position: absolute;
+  max-width: 646px;
+  height: 568;
+  top: 124px;
+  right: 5px;
+}
+
+.header__footer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  box-sizing: border-box;
+  color: #6f6f6f;
 }
