@@ -82,6 +82,7 @@
 
       <!-- Main Section -->
       <main class="content" id="content">
+        <!-- Recipes Section -->
         <section class="recipes" id="recipes">
           <h2 class="recipes__title">Recipes</h2>
           <p class="recipes__subtitle">
@@ -123,8 +124,77 @@
             </div>
           </div>
         </section>
-        <section class="reservations" id="reservations"></section>
+
+        <!-- Reservations Section -->
+        <section class="reservations" id="reservations">
+          <h2 class="reservations__title">Book a table</h2>
+          <form action="/form" class="reservations__form">
+            <fieldset class="form__fieldset">
+              <label for="name" class="form__label">Name *</label>
+              <input
+                type="text"
+                class="form__input"
+                id="name"
+                name="name"
+                placeholder="Name Surname"
+                required
+              />
+              <label for="guests-number" class="form__label"
+                >Number of guests *</label
+              >
+              <input
+                type="number"
+                class="form__input"
+                id="guests-number"
+                name="guestsnumber"
+                min="1"
+                max="8"
+                placeholder="1-8"
+                required
+              />
+              <label for="datetime" class="form__label">Date & time *</label>
+              <input
+                type="datetime-local"
+                class="form__input"
+                id="datetime"
+                name="datetime"
+                required
+              />
+              <label for="email" class="form__label">Your email *</label>
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                name="email"
+                placeholder="email@email.com"
+                required
+              />
+            </fieldset>
+            <button type="submit" class="form__button">Book a table</button>
+            <input
+              type="hidden"
+              class="form__checkbox-hidden"
+              name="agree"
+              value="no"
+            />
+            <label for="agree" class="form__label">
+              <input
+                type="checkbox"
+                class="form__checkbox"
+                id="agree"
+                name="agree"
+                value="yes"
+                required
+              />
+              I agree with the terms of use
+            </label>
+          </form>
+        </section>
+
+        <!-- Menu Section -->
         <section class="menu" id="menu"></section>
+
+        <!-- Contacts Section -->
         <section class="contacts" id="contacts"></section>
       </main>
       <footer class="footer"></footer>

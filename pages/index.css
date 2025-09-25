@@ -4,8 +4,8 @@
   max-width: 1600px;
   margin: 0 auto;
   font-family: "Inter", "Arial", sans-serif;
-  font-size: 16px;
   font-weight: 500;
+  font-size: 16px;
   line-height: 20px;
 }
 
@@ -160,4 +160,104 @@
   font-style: normal;
   font-size: 20px;
   line-height: 30px;
+}
+
+.reservations {
+  color: #000000;
+  background-color: #d9e7ff;
+  background-image: url("../images/background_reservation.svg");
+  background-repeat: no-repeat; /* prevents tiling */
+  background-size: cover; /* scales image to cover the block */
+  background-position: center; /* centers the image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: center;*/
+  margin: 0 auto;
+  padding: 100px 80px 120px;
+  position: relative;
+  /*box-sizing: border-box;*/
+}
+
+.reservations__title {
+  margin: 0 auto;
+  padding: 0 80px 80px;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.reservations__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 385px;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 0;
+  padding: 0 0;
+  width: 100%;
+  border: none;
+}
+
+.form__label {
+  margin: 0 0 8px;
+  font-style: normal;
+}
+
+.form__input {
+  border-radius: 4px;
+  border: 1px;
+  border-color: #838383;
+  border-style: solid;
+  margin: 0 0 32px;
+  width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.form__input::placeholder {
+  color: #838383;
+}
+
+.form__button {
+  background-color: #1878dc;
+  border-radius: 4px;
+  margin: 0 auto 32px;
+  padding: 20px 0;
+  width: 100%;
+  font-style: normal;
+  color: #fff;
+}
+
+.form__button:hover {
+  background-color: #3f96f3;
+  /*transform: scale(1.05);*/
+}
+
+.form__button:hover {
+  transition: transform 0.4s ease-in;
+}
+
+.form__label {
+  margin: 0 0 8px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.form__checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.form__checkbox:checked {
+  background-color: #1878dc;
+  background-image: url("../images/check.svg");
 }
